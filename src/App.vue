@@ -1,11 +1,12 @@
 <script>
-
+import NavMenu from './components/NavMenu.vue';
 import RecipeCard from './components/RecipeCard.vue';
 import ProfileCard from './components/ProfileCard.vue';
 
 export default {
   name: "App",
   components: {
+    NavMenu,
     RecipeCard,
     ProfileCard
   }

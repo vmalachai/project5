@@ -1,16 +1,22 @@
 <template>
-  <nav>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/other">Other</RouterLink>
+  <nav class="bg-blue-500 p-4 text-white">
+    <ul class="flex justify-center space-x-4">
+      <li>
+        <router-link to="/" class="hover:underline" active-class="underline underline-offset-4">
+          Home
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/other" class="hover:underline" active-class="underline underline-offset-4">
+          Other
+        </router-link>
+      </li>
+    </ul>
   </nav>
 </template>
 
-<style lang="postcss" scoped>
-nav {
-  @apply flex justify-center space-x-4;
-
-  & .router-link-active {
-    @apply underline underline-offset-4;
-  }
-}
-</style>
+<script>
+export default {
+  name: "NavMenu",
+};
+</script>
